@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vidu-api"
+version = "0.1.0"
+description = "Python client for Vidu-class video generation via a hosted API: text-to-video and image-to-video with audio."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [{name = "vidu-dev"}]
+keywords = ["ai api", "kling-video-v3-pro", "seedance-2.5", "synexa", "vidu", "vidu api", "vidu python"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["httpx>=0.24"]
+
+[project.urls]
+Homepage = "https://github.com/vidu-dev/vidu-api"
+Documentation = "https://vidu-dev.github.io/vidu-api/"
+"Hosted model" = "https://synexa.ai/explore/bytedance/seedance-2.5?utm_source=github&utm_medium=ugc&utm_campaign=vidu-dev&utm_content=pyproject&utm_term=tier-c"
+
+[tool.setuptools.packages.find]
+include = ["vidu_api*"]
